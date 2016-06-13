@@ -77,4 +77,7 @@ Nomster::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # added for Devise configurations
+  config.action_mailer.default_url_options = { host: 'firehose-nomster.herokuapp.com' }
 end
