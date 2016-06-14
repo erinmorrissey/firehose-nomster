@@ -15,7 +15,10 @@ Nomster::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :places
+  # By nesting :comments inside :places, the URL for it will contain the place_id
+  resources :places do
+    resources :comments, only: :create
+  end
 
   # Example resource route with options:
   #   resources :products do
