@@ -60,3 +60,9 @@ gem 'simple_form'
 
 # Use Devise
 gem 'devise', '>= 3.2.4'
+
+# Use Geocoder
+gem 'geocoder', '1.3.4'
+
+# Use Figaro for storing ENV values
+gem 'figaro', '>= 1.0.0'
