@@ -43,6 +43,19 @@
 </div>
 
 
+<div class="clear"></div>
+
+
+
+<div style="border:1px solid red;">
+  <h1>Photos</h1>
+  <% simple_form_for @photo, url: '#' do |f| %>
+    <%= f.input :caption %>
+    <%= f.submit "Add Photos", class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
+
 
 <!-- Comment form modal window -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
