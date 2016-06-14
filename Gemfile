@@ -69,3 +69,6 @@ gem 'figaro', '>= 1.0.0'
 
 # Use Carrierwave for photo uploading
 gem 'carrierwave'
+
+# Use Fog to make Carrierwave communicate with Amazon S3 for image file storage
+gem 'fog'
