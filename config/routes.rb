@@ -18,6 +18,7 @@ Nomster::Application.routes.draw do
   # By nesting :comments inside :places, the URL for it will contain the place_id
   resources :places do
     resources :comments, only: :create
+    resources :photos, only: :create
   end
 
   # Example resource route with options:
