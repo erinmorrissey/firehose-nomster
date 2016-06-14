@@ -43,7 +43,8 @@
   <h1>Photos</h1>
   <% @place.photos.each do |photo| %>
     <div>
-      <p><%= photo.caption %></p>
+      <%= image_tag photo.picture, width: '100' %>
+      <%= photo.caption %>
     </div>
   <% end %>
 
@@ -58,6 +59,7 @@
 <div style="border:1px solid red;">
   <h1>Add Photos</h1>
   <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+    <%= f.input :picture %>
     <%= f.input :caption %>
     <%= f.submit "Add Photos", class: 'btn btn-primary' %>
   <% end %>

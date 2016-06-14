@@ -66,3 +66,6 @@ gem 'geocoder', '1.3.4'
 
 # Use Figaro for storing ENV values
 gem 'figaro', '>= 1.0.0'
+
+# Use Carrierwave for photo uploading
+gem 'carrierwave'
