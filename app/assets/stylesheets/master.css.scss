@@ -67,3 +67,15 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+img.index-thumb {
+  max-width: 350px;
+  float:right;
+  margin-left:30px;
+}
+
+@media (max-width: 750px) {
+  img.index-thumb {
+    max-width: 285px;
+  }
+}
