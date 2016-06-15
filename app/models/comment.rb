@@ -1,4 +1,5 @@
 class Comment < ActiveRecord::Base
+  # belongs_to means links_to another table (each Comment links_to another user)
   belongs_to :user
   belongs_to :place
 
