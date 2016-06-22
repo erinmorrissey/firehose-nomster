@@ -1,4 +1,4 @@
-<div class="booyah-box">
+<div class="booyah-box col-xs-10 col-xs-offset-1">
 
   <h1>My Profile</h1>
 
@@ -41,6 +41,47 @@
 
   <div class="clear"></div>
 
+
+
+  <br /><br />
+
+
+  <!-- display users's places -->
+  <h2>My Places</h2>
+
+  <% @user.places.each do |place| %>
+    <div class="booyah-box col-xs-10 col-xs-offset-1">
+
+      <% if place.photos.present? %>
+        <%= image_tag place.photos.first.picture, class: 'img-responsive img-thumbnail index-thumb' %>
+      <% end %>
+
+      <h1><%= link_to place.name, place_path(place) %></h1>
+      <h2><%= place.address %></h2><br />
+      <p><%= place.description %></p>
+
+      <% if place.user.present? %>
+        <small><%= place.user.email %></small>
+      <% end %>
+
+      <% if place.comments.present? %>
+        <div class="col-xs-12">
+          <blockquote>
+            <% if place.comments.last.humanized_rating.present? %>
+              <b><%= place.comments.last.humanized_rating %></b> - 
+            <% end %>
+            <%= place.comments.last.message %>
+            <small><%= place.comments.last.user.email %></small>
+          </blockquote>
+        </div>
+      <% end %>
+
+    </div>
+  <% end %>
+
+
+
+  <div class="clear"></div>
 
 
 </div>
