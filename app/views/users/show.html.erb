@@ -4,7 +4,7 @@
 
   <div class="col-xs-4">
     <%= image_tag 'user.png' %>
-    <h2><%= @user.email %></h2>
+    <h3><%= @user.email %></h3>
   </div>
 
   <div class="col-xs-8">
@@ -13,6 +13,34 @@
     <h3><%= @user.comments.where(rating: '5_stars').count %> 5-star ratings</h3>
   </div>
 
+
+
   <div class="clear"></div>
+
+
+  <br /><br />
+
+
+  <!-- display users's comments -->
+  <h2>My Comments</h2>
+
+  <% @user.comments.each do |comment| %>
+    <div class="col-xs-12 col-sm-6">
+      <h3 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h3>
+      <blockquote>
+        <% if comment.humanized_rating.present? %>
+          <b><%= comment.humanized_rating %></b> - 
+        <% end %>
+        <%= comment.message %>
+        <small><%= comment.user.email %></small>
+      </blockquote>
+    </div>
+  <% end %>
+
+
+
+  <div class="clear"></div>
+
+
 
 </div>
