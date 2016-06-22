@@ -25,6 +25,8 @@ Nomster::Application.routes.draw do
     resources :photos, only: :create
   end
 
+  resources :users, only: :show
+  
   # Example resource route with options:
   #   resources :products do
   #     member do
