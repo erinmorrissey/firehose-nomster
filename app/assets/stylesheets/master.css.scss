@@ -174,3 +174,27 @@ form .input {
 form .input label abbr {
   border-bottom: none;
 }
+
+img.userprofile {
+  margin-bottom:20px;
+  opacity:0.3;
+}
+
+.profile h3 {
+  margin-bottom:6px;
+}
+
+@media (max-width: 750px) {
+  .profile h3 {
+    font-size:18px;
+  }
+}
+
+.dashboard h4 {
+  margin-bottom:30px;
+}
+
+.usercomments, .usercomments a {
+  font-family: 'Patua One', Helvetica, Arial, sans-serif;
+  color:#999966;
+}
