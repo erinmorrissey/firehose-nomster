@@ -16,7 +16,7 @@ hr {
   margin-bottom:40px;
 }
 
-.btn, a .btn {
+.btn, a .btn, input.btn, .modal-footer .btn + .btn {
   margin-bottom:10px;
 }
 
@@ -165,4 +165,12 @@ img.index-thumb {
   .showphoto {
     min-height: 0;
   }
+}
+
+form .input {
+  margin-bottom:20px;
+}
+
+form .input label abbr {
+  border-bottom: none;
 }
