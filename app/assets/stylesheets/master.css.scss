@@ -11,6 +11,15 @@ h1, h2, h3, h4, h5, h6 {
   padding:0;
 }
 
+hr {
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+.btn, a .btn {
+  margin-bottom:10px;
+}
+
 .clear {
   clear:both;
 }
@@ -38,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top:10px;
-  margin-bottom:15px;
+  margin-top:30px;
+  margin-bottom:30px;
   padding:20px;
 }
 
@@ -118,10 +127,14 @@ img.index-thumb {
 }
 
 @media (max-width: 750px) {
+  .carousel-indicators {
+    display:none;
+  }
+
   .carousel-caption {
     font-size:32px;
     background: none;
-    padding: 0 40px 40px;
+    padding: 0 40px 25px;
     line-height: normal;
   }
 }
@@ -133,4 +146,23 @@ img.index-thumb {
 .pagination .active span, .pagination .active span:hover {
   background-color:#999966;
   border-color:#999966;
+}
+
+.showphoto {
+  min-height:500px;
+  margin-bottom:30px;
+}
+
+.showphoto h5 {
+  margin-top:10px;
+  padding:5px;
+  font-size:13px;
+  font-style: italic;
+  background: #f9f9f9;
+}
+
+@media (max-width: 750px) {
+  .showphoto {
+    min-height: 0;
+  }
 }
