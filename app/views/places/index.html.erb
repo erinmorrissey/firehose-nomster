@@ -11,19 +11,19 @@
     <div class="item active">
       <%= image_tag 'slider1.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
-        The very best landscapes available
+        The very best landscapes on earth
       </div>
     </div>
     <div class="item">
       <%= image_tag 'slider2.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
-        The very best landscapes available
+        The very best landscapes on earth
       </div>
     </div>
     <div class="item">
       <%= image_tag 'slider3.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
-        The very best landscapes available
+        The very best landscapes on earth
       </div>
     </div>
   </div>
@@ -72,4 +72,8 @@
   </div>
 <% end %>
 
-<%= will_paginate @places, renderer: BootstrapPagination::Rails, previous_label: "Older", next_label: "Newer" %>
+
+
+<div class="text-center">
+          <%= will_paginate @places, renderer: BootstrapPagination::Rails, previous_label: "Older", next_label: "Newer" %>
+</div>

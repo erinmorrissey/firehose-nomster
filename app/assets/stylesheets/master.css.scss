@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
   clear:both;
 }
 
+.navbar-brand {
+  font-size:26px;
+}
+
 .navbar.navbar-inverse {
   background: url('/assets/cartographer.png');
   border-radius: 0;
@@ -37,6 +41,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-top:10px;
   margin-bottom:15px;
   padding:20px;
+}
+
+.booyah-box h1, .booyah-box h1 a {
+  font-family: 'Patua One', Helvetica, Arial, sans-serif;
+  color: #999966;
+  margin-bottom:20px;
+}
+
+.booyah-box h2 {
+  font-size:20px;
 }
 
 .field_with_errors {
@@ -78,11 +92,13 @@ img.index-thumb {
 @media (max-width: 750px) {
   img.index-thumb {
     max-width: 285px;
+    margin-bottom:30px;
   }
 }
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+  margin-bottom:30px;
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -91,6 +107,7 @@ img.index-thumb {
 }
 
 .carousel-caption {
+  font-family: 'Patua One', Helvetica, Arial, sans-serif;
   font-size:60px;
   font-weight:100;
   text-shadow: rgba(0,0,0,0.95) 2px 2px;
@@ -98,4 +115,22 @@ img.index-thumb {
   width:100%;
   position:absolute;
   left:0;
+}
+
+@media (max-width: 750px) {
+  .carousel-caption {
+    font-size:32px;
+    background: none;
+    padding: 0 40px 40px;
+    line-height: normal;
+  }
+}
+
+.pagination li a, .pagination li a:hover {
+  color:#999966;
+}
+
+.pagination .active span, .pagination .active span:hover {
+  background-color:#999966;
+  border-color:#999966;
 }

@@ -5,7 +5,7 @@ class PlacesController < ApplicationController
   # very simple code to grab all places so they can be
   # displayed in the Index view (index.html.erb)
   def index
-    @places = Place.all.order(:id).paginate(:page => params[:page], :per_page => 1)
+    @places = Place.all.order(:id).paginate(:page => params[:page], :per_page => 4)
   end
 
 
