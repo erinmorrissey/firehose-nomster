@@ -86,7 +86,7 @@
   <h1>Photos</h1>
   <% @place.photos.each do |photo| %>
     <div class="col-md-4 showphoto">
-      <%= image_tag photo.picture, width: '330', class: 'img-responsive img-thumbnail img-thumb' %>
+      <%= image_tag photo.picture, width: '350', class: 'img-responsive img-thumbnail img-thumb' %>
       <h5><%= photo.caption %></h5>
     </div>
   <% end %>
